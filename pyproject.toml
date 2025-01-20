@@ -1,0 +1,26 @@
+[project]
+name = "sequencer-project"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "dim-papach",email = "dipapachristopoulos@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy (>=1.13)",
+    "scikit-learn (>=0.20)",
+    "scipy (>=1.0)",
+    "networkx (>=2.4)",
+    "joblib (>=0.13.2)",
+    "thesequencer @ git+https://github.com/dalya/Sequencer.git"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
+
