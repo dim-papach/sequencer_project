@@ -6,12 +6,14 @@ authors = [
     {name = "dim-papach",email = "dipapachristopoulos@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
     "numpy (>=1.13)",
     "scikit-learn (>=0.20)",
     "scipy (>=1.0)",
+    "astropy",
     "networkx (>=2.4)",
+    "matplotlib",
     "joblib (>=0.13.2)",
     "thesequencer @ git+https://github.com/dalya/Sequencer.git"
 ]
@@ -23,4 +25,3 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 package-mode = false
-
