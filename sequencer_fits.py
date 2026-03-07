@@ -92,3 +92,14 @@ for j in range(i + 1, len(axes.flatten())):
 plt.tight_layout()
 plt.savefig(os.path.join(output_dir, "spectra_y_grid.png"), dpi=DPI)
 plt.close()
+
+# choose a random spectral x slice and plot it
+
+dummy_spectrum = data[:, 2, :]
+
+plt.imshow(np.log10(dummy_spectrum + 1e-10), cmap='inferno', origin='lower', aspect='auto')
+plt.show()
+
+
+
+exit()
