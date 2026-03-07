@@ -10,6 +10,8 @@ import sequencer
 
 fits_file = "combined_cube.fits"
 
+DPI = 200
+
 print("Loading data...")
 
 with fits.open(fits_file) as hdul:
@@ -33,7 +35,7 @@ for i, ax in enumerate(axes.flat):
     ax.axis('off')
 
 plt.tight_layout()
-plt.savefig(os.path.join(output_dir, "grid.png"), dpi=600)
+plt.savefig(os.path.join(output_dir, "grid.png"), dpi=DPI)
 plt.close()
 
 
@@ -66,7 +68,7 @@ for j in range(i + 1, len(axes.flatten())):
     axes.flatten()[j].axis('off')
 
 plt.tight_layout()
-plt.savefig(os.path.join(output_dir, "spectra_x_grid.png"), dpi=600)
+plt.savefig(os.path.join(output_dir, "spectra_x_grid.png"), dpi=DPI)
 plt.close()
 
 # --- 2. Spectral-Y Slices (Slicing along X) ---
@@ -88,5 +90,5 @@ for j in range(i + 1, len(axes.flatten())):
     axes.flatten()[j].axis('off')
 
 plt.tight_layout()
-plt.savefig(os.path.join(output_dir, "spectra_y_grid.png"), dpi=600)
+plt.savefig(os.path.join(output_dir, "spectra_y_grid.png"), dpi=DPI)
 plt.close()
