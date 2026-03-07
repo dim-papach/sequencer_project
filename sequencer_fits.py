@@ -22,9 +22,13 @@ with fits.open(fits_file) as hdul:
 # output_dir = "original"
 # os.makedirs(output_dir, exist_ok=True)
 
-# n_slices = data.shape[0]
-# cols = int(np.ceil(np.sqrt(n_slices)))
-# rows = int(np.ceil(n_slices / cols))
+n_slices = data.shape[0]
+cols = data .shape[1]
+rows = data.shape[2]
+
+print("Number of slices: ", n_slices)
+print("Number of rows: ", rows)
+print("Number of columns: ", cols)
 
 # fig, axes = plt.subplots(rows, cols, figsize=(15, 15))
 # for i, ax in enumerate(axes.flat):
@@ -93,12 +97,47 @@ with fits.open(fits_file) as hdul:
 # plt.savefig(os.path.join(output_dir, "spectra_y_grid.png"), dpi=DPI)
 # plt.close()
 
-# # choose a random spectral x slice and plot it
+# # choose a random spectral slice and plot it
 
 dummy_spectrum = data[:, 2, :]
 
 plt.imshow(np.log10(dummy_spectrum + 1e-10), cmap='inferno', origin='lower', aspect='auto')
 plt.show()
 
+
+#Sequencer algorithm
+
+# The Sequencer is a manifold learning algorithm that identifies the main trend in a dataset.
+# It works by calculating distances between all pairs of data points using multiple metrics 
+# and scales, constructing a graph, and then finding the optimal 1D sequence that 
+# minimizes the total distance between adjacent points
+
+# find the NaNs in the data
+
+nans = np.isnan(data)
+print("Number of NaNs: ", np.sum(nans))
+
+# if NaNs, then impute them with the mean of the neighboring pixels
+if np.any(nans):
+    from scipy.ndimage import uniform_filter
+    
+    valid_mask = (~nans).astype(float)
+    data_zeroed = np.nan_to_num(data)
+    
+    # window_size calculates the number of elements in a 3x3(x3) window
+    window_size = 3 ** data.ndim
+    
+    # calculate the sum of neighboring pixels and the number of valid neighbors
+    sum_neighbors = uniform_filter(data_zeroed, size=3, mode='constant', cval=0.0) * window_size
+    count_neighbors = uniform_filter(valid_mask, size=3, mode='constant', cval=0.0) * window_size
+    
+    # prevent division by zero for areas containing purely NaNs
+    count_neighbors[count_neighbors == 0] = 1
+    
+    mean_neighbors = sum_neighbors / count_neighbors
+    
+    # impute the NaN values
+    data[nans] = mean_neighbors[nans]
+    print("NaNs imputed with mean of neighboring pixels.")
 
 exit()
