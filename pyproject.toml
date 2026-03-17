@@ -6,7 +6,7 @@ authors = [
     {name = "dim-papach",email = "dipapachristopoulos@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 dependencies = [
     "numpy (>=1.13)",
     "scikit-learn (>=0.20)",
@@ -15,7 +15,8 @@ dependencies = [
     "networkx (>=2.4)",
     "matplotlib",
     "joblib (>=0.13.2)",
-    "thesequencer @ git+https://github.com/dalya/Sequencer.git"
+    "thesequencer @ git+https://github.com/dalya/Sequencer.git",
+    "ipykernel (>=7.2.0,<8.0.0)"
 ]
 
 
