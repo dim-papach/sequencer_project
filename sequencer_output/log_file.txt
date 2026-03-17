@@ -57,3 +57,40 @@ calculating the distance matrices for estimator: EMD, scale: 1024
 finished calculating this distance matrix list, it took: 31.270530700683594 seconds 
 calculating the distance matrices for estimator: EMD, scale: 2048
 finished calculating this distance matrix list, it took: 62.76777267456055 seconds 
+started the run
+calculating the distance matrices for estimator: EMD, scale: 1
+started the run
+calculating the distance matrices for estimator: EMD, scale: 1
+started the run
+calculating the distance matrices for estimator: EMD, scale: 1
+started the run
+calculating the distance matrices for estimator: EMD, scale: 1
+started the run
+calculating the distance matrices for estimator: EMD, scale: 1
+started the run
+calculating the distance matrices for estimator: EMD, scale: 1
+started the run
+calculating the distance matrices for estimator: EMD, scale: 1
+finished calculating this distance matrix list, it took: 2.3172972202301025 seconds 
+calculating the distance matrices for estimator: EMD, scale: 2
+finished calculating this distance matrix list, it took: 0.5763611793518066 seconds 
+calculating the distance matrices for estimator: EMD, scale: 4
+finished calculating this distance matrix list, it took: 0.4291224479675293 seconds 
+calculating the distance matrices for estimator: EMD, scale: 8
+finished calculating this distance matrix list, it took: 0.3715853691101074 seconds 
+calculating the distance matrices for estimator: EMD, scale: 16
+finished calculating this distance matrix list, it took: 0.5033056735992432 seconds 
+calculating the distance matrices for estimator: EMD, scale: 32
+finished calculating this distance matrix list, it took: 0.7558209896087646 seconds 
+calculating the distance matrices for estimator: EMD, scale: 64
+finished calculating this distance matrix list, it took: 1.515096664428711 seconds 
+calculating the distance matrices for estimator: EMD, scale: 128
+finished calculating this distance matrix list, it took: 2.8989310264587402 seconds 
+calculating the distance matrices for estimator: EMD, scale: 256
+finished calculating this distance matrix list, it took: 5.857903957366943 seconds 
+calculating the distance matrices for estimator: EMD, scale: 512
+finished calculating this distance matrix list, it took: 11.592387676239014 seconds 
+calculating the distance matrices for estimator: EMD, scale: 1024
+finished calculating this distance matrix list, it took: 23.149969339370728 seconds 
+calculating the distance matrices for estimator: EMD, scale: 2048
+finished calculating this distance matrix list, it took: 46.6843638420105 seconds 
