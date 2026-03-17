@@ -1,0 +1,59 @@
+started the run
+calculating the distance matrices for estimator: EMD, scale: 1
+finished calculating this distance matrix list, it took: 1.8740034103393555 seconds 
+calculating the distance matrices for estimator: EMD, scale: 2
+finished calculating this distance matrix list, it took: 0.5646064281463623 seconds 
+started the run
+calculating the distance matrices for estimator: EMD, scale: 1
+finished calculating this distance matrix list, it took: 0.47101616859436035 seconds 
+calculating the distance matrices for estimator: EMD, scale: 2
+finished calculating this distance matrix list, it took: 0.4065830707550049 seconds 
+started the run
+calculating the distance matrices for estimator: EMD, scale: 1
+finished calculating this distance matrix list, it took: 1.8909084796905518 seconds 
+calculating the distance matrices for estimator: EMD, scale: 2
+finished calculating this distance matrix list, it took: 0.46523284912109375 seconds 
+calculating the distance matrices for estimator: EMD, scale: 5
+finished calculating this distance matrix list, it took: 0.6674726009368896 seconds 
+calculating the distance matrices for estimator: EMD, scale: 10
+finished calculating this distance matrix list, it took: 0.6890010833740234 seconds 
+calculating the distance matrices for estimator: EMD, scale: 15
+finished calculating this distance matrix list, it took: 0.9157981872558594 seconds 
+started the run
+calculating the distance matrices for estimator: EMD, scale: 1
+finished calculating this distance matrix list, it took: 2.0332038402557373 seconds 
+calculating the distance matrices for estimator: EMD, scale: 2
+finished calculating this distance matrix list, it took: 0.4876673221588135 seconds 
+calculating the distance matrices for estimator: EMD, scale: 5
+finished calculating this distance matrix list, it took: 0.5964875221252441 seconds 
+calculating the distance matrices for estimator: EMD, scale: 10
+finished calculating this distance matrix list, it took: 0.6375782489776611 seconds 
+calculating the distance matrices for estimator: EMD, scale: 15
+finished calculating this distance matrix list, it took: 0.8525176048278809 seconds 
+calculating the distance matrices for estimator: EMD, scale: 100
+finished calculating this distance matrix list, it took: 3.5976736545562744 seconds 
+started the run
+calculating the distance matrices for estimator: EMD, scale: 1
+finished calculating this distance matrix list, it took: 2.4950759410858154 seconds 
+calculating the distance matrices for estimator: EMD, scale: 2
+finished calculating this distance matrix list, it took: 0.5500106811523438 seconds 
+calculating the distance matrices for estimator: EMD, scale: 4
+finished calculating this distance matrix list, it took: 0.6123919486999512 seconds 
+calculating the distance matrices for estimator: EMD, scale: 8
+finished calculating this distance matrix list, it took: 0.6069238185882568 seconds 
+calculating the distance matrices for estimator: EMD, scale: 16
+finished calculating this distance matrix list, it took: 0.8902637958526611 seconds 
+calculating the distance matrices for estimator: EMD, scale: 32
+finished calculating this distance matrix list, it took: 1.5607094764709473 seconds 
+calculating the distance matrices for estimator: EMD, scale: 64
+finished calculating this distance matrix list, it took: 2.428591012954712 seconds 
+calculating the distance matrices for estimator: EMD, scale: 128
+finished calculating this distance matrix list, it took: 4.447233438491821 seconds 
+calculating the distance matrices for estimator: EMD, scale: 256
+finished calculating this distance matrix list, it took: 8.62111234664917 seconds 
+calculating the distance matrices for estimator: EMD, scale: 512
+finished calculating this distance matrix list, it took: 16.435192108154297 seconds 
+calculating the distance matrices for estimator: EMD, scale: 1024
+finished calculating this distance matrix list, it took: 31.270530700683594 seconds 
+calculating the distance matrices for estimator: EMD, scale: 2048
+finished calculating this distance matrix list, it took: 62.76777267456055 seconds 
