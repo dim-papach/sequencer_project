@@ -16,7 +16,8 @@ dependencies = [
     "matplotlib",
     "joblib (>=0.13.2)",
     "thesequencer @ git+https://github.com/dalya/Sequencer.git",
-    "ipykernel (>=7.2.0,<8.0.0)"
+    "ipykernel (>=7.2.0,<8.0.0)",
+    "nbformat (>=5.10.4,<6.0.0)"
 ]
 
 
